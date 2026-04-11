@@ -10,7 +10,7 @@ El objetivo principal es transformar datos crudos de telecomunicaciones en **ins
 * Optimizar la oferta de planes según la edad y el comportamiento del usuario.
 
 ## 💾 Datasets Utilizados
-El análisis se basa en el conjunto de datos `user_profile_2024`, que incluye variables como:
+El análisis se basa en el conjunto de dataframes: `user`, `usage` y `plans`, que incluye variables como:
 * **Demográficas:** Edad y Grupo de Edad (Joven, Adulto, Adulto Mayor).
 * **Comportamiento de Voz:** Cantidad de llamadas y duración total en minutos.
 * **Mensajería:** Cantidad de mensajes enviados.
@@ -20,7 +20,7 @@ El análisis se basa en el conjunto de datos `user_profile_2024`, que incluye va
 
 ## 🛠️ Etapas del Análisis
 1.  **Limpieza y Preprocesamiento:** Tratamiento de valores nulos (imputación con 0) y corrección de tipos de datos.
-2.  **Ingeniería de Características:** Creación de columnas de segmentación (`grupo_edad` y `grupo_uso`) mediante lógica de negocio y librerías como `NumPy` y `Pandas`.
+2.  **Ingeniería de Características:** Creación de columnas de segmentación (`grupo_edad` y `grupo_uso`) mediante lógica de negocio y librerías como `NumPy`, `Pandas`, `Seaborn` y `Matplotlib`.
 3.  **Análisis Descriptivo:** Evaluación de la distribución demográfica (dominio del 81.3% en segmentos adultos).
 4.  **Detección de Outliers:** Identificación de patrones de uso extremo (llamadas > 90 min) mediante visualizaciones y análisis estadístico.
 5.  **Cruce de Variables:** Análisis de la relación entre la edad y la intensidad de uso mediante matrices de correlación y heatmaps.
